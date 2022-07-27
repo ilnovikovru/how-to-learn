@@ -16,6 +16,7 @@
   max-height: 756px;
   background-color: #f2f2f2;
   display: flex;
+  position: relative;
 }
 
 .logo {
@@ -204,6 +205,8 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  color:#2f80ed;
+  text-decoration: none;
 }
 
 .kaufman {
@@ -272,17 +275,31 @@
 .footer {
   background-color: #1f1f1f;
   padding-bottom: 40px;
-}
-
-.footer__columns {
-  padding-top:60px;
-  margin: auto;
-  flex-basis: 711px;
-  width: 80%;
+  min-height: 350px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
+}
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  padding-top:60px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.footer__columns_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_place_footer {
+  width: 228px;
+  height: 32px;
 }
 
 .footer__author {
@@ -292,11 +309,11 @@
   font-size: 18px;
   font-weight: normal;
   color: white;
-  bottom:0;
-  position: absolute;
 }
 
 .footer__column-heading {
+  padding: 0;
+  margin: 0;
   margin-bottom:20px;
   line-height: 30px;
   font-size: 18px;
@@ -306,14 +323,14 @@
 
 .footer__column-links {
   list-style: none;
-  margin-bottom:16px;
-  padding-left: 0;
-}
-
-.footer__column-link {
+  margin: 16px 0 0 0;
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+}
+
+.footer__column-link {
   color: white;
   text-decoration: none;
 }
