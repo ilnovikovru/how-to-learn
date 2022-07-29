@@ -5,11 +5,6 @@
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
-.no-margin-padding-block {
-  margin: 0;
-  padding: 0; 
-}
-
 .header {
   height: 100vh;
   min-height: 600px;
@@ -30,26 +25,30 @@
 }
 
 .header__title {
+  margin: 0;
   padding-left: 64px;
   align-self: center;
   width: 730px;
-  z-index: 1;
+  z-index: 2;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
 }
 
 .header__subtitle  {
+  margin: 0;
   position: absolute;
-  width:338px;
+  width:388px;
   left: 64px;
   bottom: 30px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 2;
 }
 
 .header__link {
+  text-decoration: none;
   color: #2f80ed;
 }
 
@@ -58,9 +57,6 @@
   right: 0;
   bottom: 0;
   z-index: 1;
-}
-
-.header__main-illustration-pic {
   width: 765px;
   height: 608px;
 }
@@ -84,6 +80,7 @@
 }
 
 .two-columns__brief {
+  margin: 0;
   width: 175px;
   color:#2f80ed;
   line-height: 1.2;
@@ -149,6 +146,7 @@
 }
 
 .table__cell {
+  text-align: left;
   width:250px;
   margin-top: 60px;
 }
@@ -162,6 +160,7 @@
 }
 
 .table__text {
+  margin: 0;
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
@@ -173,25 +172,25 @@
   background-image: url(../images/feynman.png);
   background-position: bottom left;
   background-repeat: no-repeat;
-  height: 890px;
+  min-height: 890px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 .feynman__title {
+  margin: 0 auto;
   width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
-  margin: auto;
   margin-bottom:0;
   margin-top: 100px;
   text-align: center;
 }
 
 .feynman__subtitle {
-  margin: auto;
+  margin: 0 auto;
   margin-top: 70px;
   line-height: 51px;
   font-size: 36px;
@@ -230,7 +229,6 @@
 }
 
 .section-subtitle_theme_dark {
-  margin-bottom: 80px;
   padding: 0;
   width: 60%;
   line-height: 34px;
@@ -271,27 +269,29 @@
   z-index: 0;
   width: 877px;
   height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
 }
 
 .footer {
   background-color: #1f1f1f;
   padding-bottom: 40px;
+  padding-top:60px;
   min-height: 350px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .footer__columns {
   width: 90%;
   display: flex;
   flex-direction: row;
-  padding-top:60px;
   justify-content: space-between;
   margin: 0 auto;
 }
 
-.footer__columns_content_copyright {
+.footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
@@ -324,7 +324,8 @@
 
 .footer__column-links {
   list-style: none;
-  margin: 16px 0 0 0;
+  margin: 0;
+  margin-bottom: 16px;
   padding: 0;
   line-height: 30px;
   font-size: 18px;
