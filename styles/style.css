@@ -38,7 +38,8 @@
 .header__subtitle  {
   margin: 0;
   position: absolute;
-  width:388px;
+  max-width:388px;
+  width: 100%;
   left: 64px;
   bottom: 30px;
   line-height: 25px;
@@ -128,7 +129,8 @@
 .section-subtitle {
   margin: auto;
   margin-top: 20px;
-  width:60%;
+  max-width:60%;
+  width:100%;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
