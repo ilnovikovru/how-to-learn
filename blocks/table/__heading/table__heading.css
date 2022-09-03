@@ -1,0 +1,15 @@
+.table__heading {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+  }
+
+.table__heading_theme_dark {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+  }
