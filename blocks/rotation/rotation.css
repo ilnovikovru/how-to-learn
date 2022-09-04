@@ -1,5 +1,5 @@
 .rotation {
-  animation: move_bg 20s linear infinite alternate;
+  animation: move_bg 20s linear infinite normal;
 }
 
 @keyframes move_bg {

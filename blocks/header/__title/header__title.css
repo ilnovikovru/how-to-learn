@@ -2,7 +2,7 @@
     margin: 0;
     padding-left: 64px;
     align-self: center;
-    width: 730px;
+    max-width: 730px;
     z-index: 2;
     line-height: 96px;
     font-size: 102px;

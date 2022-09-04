@@ -2,9 +2,8 @@
     list-style: none;
     width:80%;
     margin: auto;
-    margin-bottom:100px;
+    column-gap:100px;
     padding-left: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
